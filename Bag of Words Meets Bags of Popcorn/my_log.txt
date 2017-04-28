@@ -1,0 +1,14 @@
+- 使用tfidf对特征进行向量化，选择选择25000个特征
+  再使用logistic回归，C=2
+  拟合的cv_score达0.9590
+  
+  
+- 使用adaboost，n_estimators数量越大通常不会导致过拟合只是时间上会加长
+  但在稀疏数据上可能效果并不好
+  [Parallel(n_jobs=-1)]: Done  20 out of  20 | elapsed: 27.5min finished
+  best score:  0.927653312
+  best params {'base_estimator': DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=1,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'), 'learning_rate': 0.99}
